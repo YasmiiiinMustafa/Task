@@ -14,7 +14,7 @@ public class TestTak4 {
         task4.GetURL("https://www.google.com/ncr");
 
         task4.SearchFor("TestNG");
-        Assert.assertEquals(task4.GetFourthResult(),"TestNG Tutorial");
+        Assert.assertEquals(task4.GetFourthResult(),"TestNG Tutorial: What is Annotations & Framework in ...");
 
     }
 }

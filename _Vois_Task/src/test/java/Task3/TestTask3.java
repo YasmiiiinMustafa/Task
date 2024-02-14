@@ -17,9 +17,9 @@ public class TestTask3 extends BaseModule {
 
         task3.SearchFor("Selenium WebDriver");
             GoogleResult GoogleSecondResult = task3.ClickButton();
-            Assert.assertTrue(GoogleSecondResult.GetSecondResult().contains("Selenium Webdriver Tutorial with Examples"));
+            //Assert.assertTrue(GoogleSecondResult.GetSecondResult().contains("Selenium Webdriver Tutorial with Examples"));
 
-       // Assert.assertEquals(GoogleSecondResult.GetSecondResult(),"Selenium Webdriver Tutorial in Java with Examples");
+       Assert.assertEquals(GoogleSecondResult.GetSecondResult(),"Selenium Webdriver Tutorial in Java with Examples");
 
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class GoogleResult {
 
-    private By SecondResult = By.xpath("(//h3[contains(@class,'LC20lb MBeuO DKV0Md')])[2]");
+    private By SecondResult = By.cssSelector("#rso > div:nth-child(4) > div > div > div.kb0PBd.cvP2Ce.jGGQ5e > div > div > span > a > h3");
 
     private WebDriver driver;
 
