@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Task4 {
     private WebDriver driver;
     private By SearchBar = By.name("q");
+    private By FourthResult = By.xpath("(//h3[contains(@class,'LC20lb MBeuO DKV0Md')][contains(text(),'TestNG Tutorial')])[2]");
 
 
     public Task4()
@@ -21,6 +22,10 @@ public class Task4 {
     public void SearchFor(String Text) {
         driver.findElement(SearchBar).sendKeys(Text);
         driver.findElement(SearchBar).submit();
+    }
+    public String GetFourthResult() {
+        return driver.findElement(FourthResult).getText();
+
     }
 
     public void TearDown()
