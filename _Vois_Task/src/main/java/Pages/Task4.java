@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Task4 {
     private WebDriver driver;
     private By SearchBar = By.name("q");
-    private By FourthResult = By.xpath("(//h3[contains(@class,'LC20lb MBeuO DKV0Md')][contains(text(),'TestNG Tutorial')])[2]");
+    private By FourthResult = By.xpath("(//h3[contains(@class,'LC20lb MBeuO DKV0Md')][contains(text(),'TestNG Tutorial')])[1]");
 
 
     public Task4()
