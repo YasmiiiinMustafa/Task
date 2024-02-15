@@ -7,12 +7,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import javax.naming.directory.SearchResult;
+import java.io.File;
 
 public class TestTask3 extends BaseModule {
 
     @Test
     public void TestSuccessfulSearch()
     {
+        File text = new File("src/test/resources/file.json");
         task3.GetURL("https://www.google.com/ncr");
 
         task3.SearchFor("Selenium WebDriver");
