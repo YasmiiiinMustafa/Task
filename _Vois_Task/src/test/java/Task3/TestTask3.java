@@ -29,8 +29,11 @@ public class TestTask3 extends BaseModule {
 
     }
 
-    @DataProvider(Text = "")
+    @DataProvider(name= "jsonData")
+   public String  readJson()
     {
+        String jsonFilPath = "src/test/resources/file,json";
         JSONParser jsonParser = new JSONParser();
+
     }
 }
