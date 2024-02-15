@@ -3,9 +3,13 @@ package Task3;
 import BaseTest.BaseModule;
 import Pages.GoogleResult;
 import Pages.Task3;
+import org.openqa.selenium.json.Json;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import java.io.FileReader;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import javax.naming.directory.SearchResult;
 import java.io.File;
@@ -27,6 +31,6 @@ public class TestTask3 extends BaseModule {
 
     @DataProvider(Text = "")
     {
-        
+        JSONParser jsonParser = new JSONParser();
     }
 }
